@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  
+  root 'pages#index'
+  
+  get 'turbo_frame', to: 'pages#turbo_frame'
+  patch 'turbo_frame', to: 'pages#turbo_frame'
+  get 'dummy', to: 'pages#dummy'
 end
