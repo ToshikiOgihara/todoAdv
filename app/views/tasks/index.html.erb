@@ -1,4 +1,11 @@
 <h1>Todo管理</h1>
-<div>
+<%= button_to "トップページに戻る", root_path, method: :get %>
+
+<div style="margin-top: 20px">
   <%= render "new_button" %>
 </div>
+
+<%= turbo_frame_tag 'tasks' do %>
+  <%= render @tasks %>
+  <%#= paginate @tasks %>
+<% end %>

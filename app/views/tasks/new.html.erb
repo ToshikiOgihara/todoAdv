@@ -1,4 +1,4 @@
-<%= turbo_frame_tag "new_todo" do %>
-  <%#= render "form", article: @article %>
-  <%= link_to '閉じる', tasks_path %>
+<%= turbo_frame_tag @task do %>
+  <%= render "form", task: @task %>
+  <%= link_to 'タスクを閉じる', tasks_path(button: true) %>
 <% end %>

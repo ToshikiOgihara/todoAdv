@@ -1,0 +1,6 @@
+<%= turbo_stream.append 'tasks' do %>
+  <%= render @task %>
+<% end %>
+<%= turbo_stream.replace 'new_task' do %>
+  <%= render "new_button" %>
+<% end %>
