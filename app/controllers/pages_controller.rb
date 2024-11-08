@@ -8,4 +8,11 @@ class PagesController < ApplicationController
   
   def dummy
   end
+  
+  def stream
+    render turbo_stream: turbo_stream.append(
+      "turbo_stream",
+      partial: "stream"
+    )
+  end
 end

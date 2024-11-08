@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get 'turbo_frame', to: 'pages#turbo_frame'
   patch 'turbo_frame', to: 'pages#turbo_frame'
   get 'dummy', to: 'pages#dummy'
+  get'stream', to: 'pages#stream'
 end
