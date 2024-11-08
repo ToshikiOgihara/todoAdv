@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   patch 'turbo_frame', to: 'pages#turbo_frame'
   get 'dummy', to: 'pages#dummy'
   get'stream', to: 'pages#stream'
+  
+  resources 'tasks'
 end
